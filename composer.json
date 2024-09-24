@@ -3,7 +3,7 @@
     "description": "New LdapAuthentication provider plugin for mediawiki",
     "type": "project",
     "require": {
-        "symfony/ldap": "^4.1"
+        "symfony/ldap": "^6.4"
     },
     "license": "MIT",
     "authors": [
@@ -14,7 +14,7 @@
     ],
     "require-dev": {
         "jakub-onderka/php-parallel-lint": "^1.0",
-        "mediawiki/mediawiki-codesniffer": "^22.0",
+        "mediawiki/mediawiki-codesniffer": "^44.0",
         "phan/phan": "^1.1"
     },
     "scripts": {
