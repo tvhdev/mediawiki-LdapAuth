@@ -174,7 +174,7 @@ class PrimaryAuthenticationProvider extends AbstractPrimaryAuthenticationProvide
 			return;
 		}
 
-		$user->setRealName( $this->manager->getAuthenticationSessionData( 'LdapAuthDisplayName' ) );
+		$user->setRealName( $this->manager->getAuthenticationSessionData( 'LdapAuthDisplayName' )?$this->manager->getAuthenticationSessionData( 'LdapAuthDisplayName' ):"" );
 		$domain = $this->manager->getAuthenticationSessionData( 'LdapAuthDomain' );
 		$user->setOption( 'domain', $domain );
 		$user->setEmail( $this->manager->getAuthenticationSessionData( 'LdapAuthEmail' ) );
